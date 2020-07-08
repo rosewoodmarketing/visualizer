@@ -706,11 +706,6 @@ header {
   display: none;
 }
 
-.accordion.open .group-title::before {
-  transform: rotate(90deg);
-  display: inline-block;
-}
-
 .group-title {
   color: #f68842;
   padding: .8rem 1rem;
@@ -722,13 +717,20 @@ header {
 }
 
 .group-title::before {
-  content: "\25BA";
-  margin-right: 5px;
+  content: "\25BC";
+  transform: rotate(-90deg);
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.accordion.open .group-title::before {
+  transform: rotate(0deg);
 }
 
 .group-title h2 {
   display: inline;
   color: #636467;
+  margin-left: 5px;
 }
 
 .subgroup-wrapper {

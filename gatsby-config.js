@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Finch Visualizer`,
-        short_name: `visualizer`,
+        short_name: `Finch Visualizer`,
         start_url: `/`,
         background_color: `white`,
         theme_color: `#f5f2eb`,
