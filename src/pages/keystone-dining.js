@@ -8,7 +8,7 @@ import FurnitureApp from "../components/FurnitureApp/FurnitureApp";
 
 const IndexPage = ({data}) => (
   <Layout h1="Keystone Dining Set">
-    <SEO title="Home" />
+    <SEO title="Keystone Dining Set" />
     <FurnitureApp data={data.allGoogleSpreadsheetKeystoneDiningSet.edges} 
     images={data.allFurniture.edges}
     />    

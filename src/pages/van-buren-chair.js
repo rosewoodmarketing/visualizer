@@ -7,10 +7,9 @@ import SEO from "../components/seo"
 import FurnitureApp from "../components/FurnitureApp/FurnitureApp";
 
 const IndexPage = ({data}) => {
-  console.log('data:', data);
   return (
   <Layout h1="Van Buren Chair">
-    <SEO title="Home" />
+    <SEO title="Van Buren Chair" />
     <FurnitureApp data={data.allGoogleSpreadsheetVanBurenChair.edges} 
     swatches={data.allSwatches.edges}
     images={data.allFurniture.edges}
