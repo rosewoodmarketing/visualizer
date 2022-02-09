@@ -29,7 +29,7 @@ export const query = graphql`
         }
       }
     }
-    allFurniture: allFile(filter: {dir: {eq: "/Users/adriannolt/Sites/visualizer/src/images/adirondack"}}) {
+    allFurniture: allFile(filter: {relativeDirectory: {eq: "adirondack"}}) {
         edges {
           node {
             id

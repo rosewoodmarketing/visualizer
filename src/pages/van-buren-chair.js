@@ -32,7 +32,7 @@ export const query = graphql`
         }
       }
     }
-    allFurniture: allFile(filter: {dir: {eq: "/Users/adriannolt/Sites/visualizer/src/images/van-buren-chair"}}) {
+    allFurniture: allFile(filter: {relativeDirectory: {eq: "van-buren-chair"}}) {
         edges {
           node {
             id
@@ -47,7 +47,7 @@ export const query = graphql`
           }
         }
       }
-      allSwatches: allFile(filter: {dir: {eq: "/Users/adriannolt/Sites/visualizer/src/images/fabric-swatches"}}) {
+      allSwatches: allFile(filter: {relativeDirectory: {eq: "fabric-swatches"}}) {
         edges {
           node {
             id

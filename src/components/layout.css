@@ -651,28 +651,9 @@ svg {
   fill: #636467;
 }
 
-header {
-  padding: .7rem;
-  display: grid;
-  grid-template-columns: 40px auto 28px;
-  gap: 1rem;
-  background-color: #f5f2eb;
-  align-items: center;
-}
 
-.logo img {
-  display: block;
-}
 
-.header-in-title {
-  margin: 0;
-}
 
-.content-wrapper {
-  padding: 1rem;
-  max-width: 900px;
-  margin: auto;
-}
 
 /* Large furniture area */
 .large-image-wrapper {
@@ -839,7 +820,16 @@ header {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 568px) {
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 750px) {
   .page-wrapper {
     position: static;
   }
@@ -855,6 +845,12 @@ header {
     margin: 1rem 5% 0 5%;
     width: 51%;
     height: auto;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+    /* max-width: 850px; */
+    margin: auto;
   }
 
   .large-image-wrapper > div {
@@ -890,10 +886,46 @@ header {
   }
   
   /* Home page */
+
+
+  header {
+    padding: .7rem;
+    display: grid;
+    grid-template-columns: 40px auto 80px 80px 80px 80px 40px;
+    gap: 1rem;
+    background-color: #f5f2eb;
+    align-items: center;
+  }
+  
+  .logo img {
+    display: block;
+    max-width: 40px;
+  }
+  
+  .header-in-title {
+    margin: 0;
+  
+  }
+
+  .menu-icons img{
+    filter: grayscale(100%);
+    height: 50px;
+    width: auto;
+  }
+  
+  .menu-icon-active img{
+    filter: grayscale(0%);
+    padding-bottom: 5px;
+    border-bottom: 4px solid #f68842;
+    height: 50px;
+    width: auto;
+  }
+
   .visualizer-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
+
   }
 
   .visualizer-list-item {
@@ -905,5 +937,41 @@ header {
     text-align: center;
   }
 
+  }/* end min-width 750 */
 
-  }/* min-width 568 */
+
+  @media only screen and (max-width: 749px) {
+  header {
+    padding: .7rem;
+    display: grid;
+    grid-template-columns: 40px auto 0px 0px 0px 0px 40px;
+    /*gap: 1rem;*/
+    background-color: #f5f2eb;
+    align-items: center;
+  }
+  
+  .logo img {
+    display: block;
+  }
+  
+  .header-in-title {
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .menu-icons {
+    display: none;
+  }
+
+  .visualizer-list {
+    gap: 1rem;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+    margin: auto;
+    max-width: 500px;
+  }
+
+}/* end mobile screens */

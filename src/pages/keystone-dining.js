@@ -29,7 +29,7 @@ export const query = graphql`
         }
       }
     }
-    allFurniture: allFile(filter: {dir: {eq: "/Users/adriannolt/Sites/visualizer/src/images/keystone-dining"}}) {
+    allFurniture: allFile(filter: {relativeDirectory: {eq: "keystone-dining"}}) {
         edges {
           node {
             id

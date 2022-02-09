@@ -32,7 +32,7 @@ const IndexPage = ({data}) => (
           </span>
         </Link>
         <Link to="/mission-double-glider/" className="visualizer-list-item">
-          <span className="visualizer-list-image"><img src={data.vanBurenImage.childImageSharp.resize.src} alt="Mission Double Glider" /></span>
+          <span className="visualizer-list-image"><img src={data.missionDoubleGliderImage.childImageSharp.resize.src} alt="Mission Double Glider" /></span>
           <span className="visualizer-list-text">
             <h2>Mission Double Glider</h2>
             <h3>Fabric & Poly visualizer</h3>
@@ -60,6 +60,13 @@ export const query = graphql`
       }
     }
     vanBurenImage: file(relativePath: {eq: "misc-furniture/finch-van-buren-chair.png"}) {
+      childImageSharp {
+        resize {
+          src
+        }
+      }
+    }
+    missionDoubleGliderImage: file(relativePath: {eq: "misc-furniture/finch-mission-double-glider.png"}) {
       childImageSharp {
         resize {
           src
