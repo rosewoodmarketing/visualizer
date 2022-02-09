@@ -185,8 +185,9 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font: 112.5%/1.45em museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -201,8 +202,8 @@ html {
 }
 body {
   color: #636467;
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 300;
   word-wrap: break-word;
   font-kerning: normal;
@@ -231,8 +232,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: inherit;
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 1.5rem;
@@ -248,8 +249,8 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 1.2rem;
@@ -265,8 +266,8 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -282,8 +283,8 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -299,8 +300,8 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -316,8 +317,8 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -622,8 +623,6 @@ pre tt:after {
   }
 }
 
-
-
 /* Custom styles start here */
 
 .page-wrapper {
@@ -634,7 +633,7 @@ pre tt:after {
 main {
   display: grid;
   align-items: center;
-  min-height: calc(100vh - 59px);
+  min-height: calc(100vh - 85px);
 }
 
 .hide {
@@ -651,13 +650,9 @@ svg {
   fill: #636467;
 }
 
-
-
-
-
 /* Large furniture area */
 .large-image-wrapper {
-  margin: .7rem;
+  margin: 0.7rem;
   height: 244px;
   position: relative;
 }
@@ -677,10 +672,11 @@ svg {
   overflow-y: auto;
 }
 
-.accordion, .visualizer-list-item {
-  margin-bottom: .6rem;
+.accordion,
+.visualizer-list-item {
+  margin-bottom: 0.6rem;
   border-radius: 3px;
-  border: 1px solid rgba(99, 100, 103, .3);
+  border: 1px solid rgba(99, 100, 103, 0.3);
 }
 
 .accordion.closed .group-content {
@@ -689,7 +685,7 @@ svg {
 
 .group-title {
   color: #f68842;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   cursor: pointer;
   background: none;
   border: none;
@@ -715,11 +711,11 @@ svg {
 }
 
 .subgroup-wrapper {
-  padding: .5rem 1rem 1rem;
+  padding: 0.5rem 1rem 1rem;
 }
 
 .subgroup-title {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #66c0d8;
   text-align: center;
 }
@@ -727,7 +723,7 @@ svg {
 .subgroup-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, 50px);
-  gap: .5rem;
+  gap: 0.5rem;
   grid-auto-rows: 50px;
   justify-content: center;
 }
@@ -747,7 +743,8 @@ svg {
   background-color: #ededed;
 }
 
-.swatch-color img, .swatch-color div {
+.swatch-color img,
+.swatch-color div {
   width: 40px;
   height: 40px;
   display: block;
@@ -758,11 +755,12 @@ svg {
   display: none;
 }
 
-.swatch.active .swatch-name, .swatch:hover .swatch-name {
+.swatch.active .swatch-name,
+.swatch:hover .swatch-name {
   display: block;
   position: absolute;
-  font-size: .8rem;
-  padding: .2rem 0;
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
   line-height: 1.1;
   top: 50%;
   left: 50%;
@@ -771,12 +769,13 @@ svg {
   min-width: 56px;
 }
 
-.swatch.active .swatch-color, .swatch:hover .swatch-color {
-  opacity: .2;
+.swatch.active .swatch-color,
+.swatch:hover .swatch-color {
+  opacity: 0.2;
 }
 
 *:focus {
-  outline: 1px dotted rgba(99, 100, 103, .3);
+  outline: 1px dotted rgba(99, 100, 103, 0.3);
 }
 
 .group-title:focus {
@@ -811,23 +810,14 @@ svg {
 
 .visualizer-list-text h2 {
   color: #f68842;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .visualizer-list-text h3 {
   color: #66c0d8;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 300;
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 750px) {
   .page-wrapper {
@@ -836,7 +826,7 @@ svg {
 
   .FurnitureApp {
     display: grid;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 85px);
     position: relative;
     align-items: center;
   }
@@ -884,36 +874,33 @@ svg {
   .swatch-panel > div {
     margin-top: 1rem;
   }
-  
+
   /* Home page */
 
-
   header {
-    padding: .7rem;
+    padding: 0.7rem;
     display: grid;
-    grid-template-columns: 40px auto 80px 80px 80px 80px 40px;
+    grid-template-columns: 70px auto 80px 80px 80px 80px 40px;
     gap: 1rem;
     background-color: #f5f2eb;
     align-items: center;
   }
-  
+
   .logo img {
     display: block;
-    max-width: 40px;
-  }
-  
-  .header-in-title {
-    margin: 0;
-  
   }
 
-  .menu-icons img{
+  .header-in-title {
+    margin: 0;
+  }
+
+  .menu-icons img {
     filter: grayscale(100%);
     height: 50px;
     width: auto;
   }
-  
-  .menu-icon-active img{
+
+  .menu-icon-active img {
     filter: grayscale(0%);
     padding-bottom: 5px;
     border-bottom: 4px solid #f68842;
@@ -925,7 +912,6 @@ svg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-
   }
 
   .visualizer-list-item {
@@ -936,30 +922,28 @@ svg {
   .visualizer-list-text {
     text-align: center;
   }
+} /* end min-width 750 */
 
-  }/* end min-width 750 */
-
-
-  @media only screen and (max-width: 749px) {
+@media only screen and (max-width: 749px) {
   header {
-    padding: .7rem;
+    padding: 0.7rem;
     display: grid;
     grid-template-columns: 40px auto 0px 0px 0px 0px 40px;
     /*gap: 1rem;*/
     background-color: #f5f2eb;
     align-items: center;
   }
-  
+
   .logo img {
     display: block;
   }
-  
+
   .header-in-title {
     margin: 0;
     padding-right: 20px;
     padding-left: 20px;
   }
-  
+
   .menu-icons {
     display: none;
   }
@@ -973,5 +957,4 @@ svg {
     margin: auto;
     max-width: 500px;
   }
-
-}/* end mobile screens */
+} /* end mobile screens */

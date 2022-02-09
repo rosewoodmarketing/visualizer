@@ -8,7 +8,7 @@ const IndexPage = ({data}) => (
   <Layout h1="Furniture Visualizer">
     <SEO title="Finch Furniture Visualizer" />
     <div className="content-wrapper">
-      <p>You know you want <a href="https://finch.us.com/" target="_blank" rel="noreferrer">Finch outdoor furniture</a>, but in what colors?<br/>Use this visualizer to choose your colors.</p>
+      <p>You know you want <a href="https://finch.us.com/" target="_blank" rel="noreferrer">Finch™ outdoor furniture</a>, but in what colors?<br/>Use this visualizer to choose your colors.</p>
       <div className="visualizer-list">
         <Link to="/adirondack-chair/" className="visualizer-list-item">
           <span className="visualizer-list-image"><img src={data.adirondackImage.childImageSharp.resize.src} alt="Finch SeaAira Adirondack Chair" /></span>

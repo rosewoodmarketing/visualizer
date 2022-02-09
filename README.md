@@ -1,54 +1,33 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Starter Google Sheets
-</h1>
+Project information is on Google Drive: https://drive.google.com/drive/folders/1AAo7UELl4gcavOkN-X5xJD8ufKXhkMT_?usp=sharing
 
-Kick off your project with this boilerplate. This starter ships with the main Gatsby configuration files along with the gatsby-source-google-spreadsheet you might need to get up and running blazing fast with the blazing fast app generator for React.
+Prerequisites to work with gatsbyjs: https://www.gatsbyjs.org/tutorial/part-zero/
+When you get to the start a project part of the tutorial, use this repo: git clone https://github.com/adriannolt/visualizer.git
 
-## 🚀 Quick start
+Drop the images (/Library/Windy Valley Woodworks/6410 Color Visualizer Developments/v2 instructions/images) into the src directory so that it looks like this:
+(Project root)
+-src
+--styles
+--pages
+--images
+--components
 
-1.  **Create a Gatsby site.**
+Also, drop the credentials folder into the root of the project.
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+Run npm install
+Use the following command to launch a dev site on your server: gatsby develop --https
 
-    ```sh
-    # create a new Gatsby site using the starter
-    gatsby new gatsby-site https://github.com/harshil1712/gatsby-starter-googlesheets
-    ```
+FYI, the data is managed in a Google Sheet: https://docs.google.com/spreadsheets/d/1Q5cd4qkpYxtwQF2EZsKSWvnLvdFRTlVTFdDd4ujiuRo/edit?usp=sharing
 
-1.  **Start developing.**
+To upload the new files:
+Run "Gatsby build"
 
-    Navigate into your new site’s directory and start it up.
+NOTE: if you changed images you may need to run "Gatsby clear" to clear all the cached files before running "Gastby Build"
 
-    ```sh
-    cd gatsby-site/
-    ```
+Compress everything in /public. Delete the files on the remote server and upload and uncompress.
 
-1.  **Open the source code and start editing!**
+Go to C-Panel,
+Public HTML > Visualizer > Web
+Leave the Well-Known folder. Delete everything else
+Upload the Zipped folder and uncompress it.
 
-    Before running the development server you will need to add credentials to the .env file.
-    
-    ```sh
-    SPREADSHEET_ID=<YOUR_SPREADHEET_ID>
-    CLIENT_EMAIL=<SERVICE_ACCOUNT_EMAIL>
-    PRIVATE_KEY=<YOUR_PRIVATE_KEY>
-    ```
-    You can get the `SPREADSHEET_ID` from the URL of your sheet, `https://docs.google.com/spreadsheets/d/<SPREADSHEET_ID>/edit#gid=12345`.
-    You will have to create a service account which will provide you with the service account email id and a private key. To know more about creating service account you can visit [here](https://support.google.com/a/answer/7378726?hl=en). After creating a service account share your sheet with edit permission with the given email id.
-
-    ```sh
-    gatsby develop
-    ```
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `gatsby-site` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-
+When finished with updates, git commit and git push origin master
