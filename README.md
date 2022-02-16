@@ -23,7 +23,7 @@ Run "Gatsby build"
 
 NOTE: if you changed images you may need to run "Gatsby clear" to clear all the cached files before running "Gastby Build"
 
-Compress everything in /public. Delete the files on the remote server and upload and uncompress.
+Compress everything in /public. Delete the files on the remote server, except README.md and .well-known, and upload and uncompress.
 
 Go to C-Panel,
 Public HTML > Visualizer > Web
