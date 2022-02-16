@@ -2,11 +2,11 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = ({data}) => (
   <Layout h1="Furniture Visualizer">
-    <SEO title="Finch Furniture Visualizer" />
+    <Seo title="Finch Furniture Visualizer" />
     <div className="content-wrapper">
       <p>You know you want <a href="https://finch.us.com/" target="_blank" rel="noreferrer">Finch™ outdoor furniture</a>, but in what colors?<br/>Use this visualizer to choose your colors.</p>
       <div className="visualizer-list">

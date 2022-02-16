@@ -2,13 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import FurnitureApp from "../components/FurnitureApp/FurnitureApp";
 
 const IndexPage = ({data}) => (
   <Layout h1="Adirondack Chair">
-    <SEO title="Adirondack Chair" />
+    <Seo title="Adirondack Chair" />
     <FurnitureApp data={data.allGoogleSpreadsheetAdirondackChair.edges} 
     images={data.allFurniture.edges}
     />    
