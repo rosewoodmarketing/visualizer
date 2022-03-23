@@ -13,6 +13,7 @@ const IndexPage = ({data}) => {
     <FurnitureApp data={data.allGoogleSpreadsheetVanBurenChair.edges} 
     swatches={data.allSwatches.edges}
     images={data.allFurniture.edges}
+    logo={data.logo.childImageSharp.resize.src}
     />
     
   </Layout>
@@ -44,6 +45,13 @@ export const query = graphql`
                 }
               }
             dir
+          }
+        }
+      }
+      logo: file(relativePath: {eq: "finch-logo.png"}) {
+        childImageSharp {
+          resize(width: 100) {
+            src
           }
         }
       }

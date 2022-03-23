@@ -2,12 +2,20 @@ import { saveAs } from 'file-saver';
 import mergeImages from 'merge-images';
 import React from 'react';
 
-const FurnitureImage = ({ selectedColors, images }) => {
+const FurnitureImage = ({ selectedColors, images, logo }) => {
   let imgSource = [];
   const groupNames = Object.keys(selectedColors);
 
   const downloadImage = () => {
-    mergeImages(imgSource).then((img) => downloadBase64Data(img, 'furniture.png'));
+
+    //creates the filename for the image to be downloaded
+    const fileName = groupNames.map((groupName)=>{
+      return groupName+'-' + selectedColors[groupName].node.color;
+    }).join('-').replace(/\s/g, '');
+    
+    imgSource.push({src:logo, opacity: 0.5, x: 570, y: 30})
+
+    mergeImages(imgSource).then((img) => downloadBase64Data(img, `${fileName}.png`));
   };
 
   const downloadBase64Data = (base64String, fileName) => {
