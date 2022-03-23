@@ -665,6 +665,34 @@ svg {
   top: 0;
 }
 
+.download-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 25px;
+  opacity: 70%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+}
+
+.download-button:hover {
+  opacity: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 /* Swatch panel */
 .swatch-panel {
   padding: 0 0.7rem;
@@ -847,6 +875,9 @@ svg {
     max-width: 800px;
     margin: 0 0 0 auto;
     position: relative;
+    border-bottom: 1px solid rgba(99, 100, 103, 0.3);
+    margin-bottom: 1rem;
+    padding-bottom: 2em;
   }
 
   .layers {

@@ -41,6 +41,18 @@ const FurnitureApp = ({data, images, swatches, logo}) => {
       };
 
       let defaults = {};
+      let defaultsFromHash = {}
+      // try and recover the color from the URL #hash
+      try {
+        const hash = window.location.hash.substring(1).split('|');
+        hash.forEach(param => {
+          const [keyEsc,valueEsc] = param.split(':');
+          const key = keyEsc.replace('_',' ');
+          const value = valueEsc.replace('_',' ');
+          defaultsFromHash[key] = value;
+        })
+      }catch(err){}
+
       data.forEach(color => {
         const {node:{group, subgroup}} = color;
 
@@ -49,6 +61,13 @@ const FurnitureApp = ({data, images, swatches, logo}) => {
           defaults[group] = color;
           groupedColors[group] = {};
         }
+        
+        // try and recover the color from the URL #hash
+        if(defaultsFromHash[group] && defaultsFromHash[group]===color.node.color){
+          defaults[group] = color;
+        }
+        
+        
         if(!groupedColors[group][subgroup]){
           groupedColors[group][subgroup] = [];
         }

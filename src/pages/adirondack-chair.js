@@ -11,6 +11,7 @@ const IndexPage = ({data}) => (
     <Seo title="Adirondack Chair" />
     <FurnitureApp data={data.allGoogleSpreadsheetAdirondackChair.edges} 
     images={data.allFurniture.edges}
+    logo={data.logo.childImageSharp.resize.src}
     />    
   </Layout>
 )
@@ -26,6 +27,13 @@ export const query = graphql`
           group
           subgroup
           id
+        }
+      }
+    }
+    logo: file(relativePath: {eq: "finch-logo.png"}) {
+      childImageSharp {
+        resize(width: 60) {
+          src
         }
       }
     }

@@ -50,7 +50,7 @@ export const query = graphql`
       }
       logo: file(relativePath: {eq: "finch-logo.png"}) {
         childImageSharp {
-          resize(width: 100) {
+          resize(width: 60) {
             src
           }
         }

@@ -11,6 +11,7 @@ const IndexPage = ({data}) => (
     <Seo title="Keystone Dining Set" />
     <FurnitureApp data={data.allGoogleSpreadsheetKeystoneDiningSet.edges} 
     images={data.allFurniture.edges}
+    logo={data.logo.childImageSharp.resize.src}
     />    
   </Layout>
 )
@@ -29,7 +30,14 @@ export const query = graphql`
         }
       }
     }
-    allFurniture: allFile(filter: {relativeDirectory: {eq: "keystone-dining"}}) {
+    logo: file(relativePath: {eq: "finch-logo.png"}) {
+      childImageSharp {
+        resize(width: 60) {
+          src
+        }
+      }
+    }
+  allFurniture: allFile(filter: {relativeDirectory: {eq: "keystone-dining"}}) {
         edges {
           node {
             id
