@@ -67,7 +67,6 @@ const FurnitureApp = ({data, images, swatches, logo}) => {
           defaults[group] = color;
         }
         
-        
         if(!groupedColors[group][subgroup]){
           groupedColors[group][subgroup] = [];
         }
