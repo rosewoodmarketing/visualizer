@@ -6,14 +6,16 @@ import Seo from "../components/seo"
 
 import FurnitureApp from "../components/FurnitureApp/FurnitureApp";
 
+const title="Van Buren Chair"
 const IndexPage = ({data}) => {
   return (
-  <Layout h1="Van Buren Chair">
-    <Seo title="Van Buren Chair" />
+  <Layout h1={title}>
+    <Seo title={title} />
     <FurnitureApp data={data.allGoogleSpreadsheetVanBurenChair.edges} 
     swatches={data.allSwatches.edges}
     images={data.allFurniture.edges}
     logo={data.logo.childImageSharp.resize.src}
+    title={title} 
     />
     
   </Layout>

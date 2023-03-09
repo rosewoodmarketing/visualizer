@@ -6,14 +6,16 @@ import Seo from "../components/seo"
 
 import FurnitureApp from "../components/FurnitureApp/FurnitureApp";
 
+const title="Mission Double Glider"
 const IndexPage = ({data}) => {
   return (
-  <Layout h1="Mission Double Glider">
-    <Seo title="Mission Double Glider" />
+  <Layout h1={title}>
+    <Seo title={title} />
     <FurnitureApp data={data.allGoogleSpreadsheetMissionDoubleGlider.edges} 
     swatches={data.allSwatches.edges}
     images={data.allFurniture.edges}
     logo={data.logo.childImageSharp.resize.src}
+    title={title} 
     />
     
   </Layout>

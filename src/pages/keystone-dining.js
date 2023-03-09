@@ -5,13 +5,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import FurnitureApp from "../components/FurnitureApp/FurnitureApp";
-
+const title="Keystone Dining Set"
 const IndexPage = ({data}) => (
-  <Layout h1="Keystone Dining Set">
-    <Seo title="Keystone Dining Set" />
+  <Layout h1={title}>
+    <Seo title={title} />
     <FurnitureApp data={data.allGoogleSpreadsheetKeystoneDiningSet.edges} 
     images={data.allFurniture.edges}
     logo={data.logo.childImageSharp.resize.src}
+    title={title}
     />    
   </Layout>
 )

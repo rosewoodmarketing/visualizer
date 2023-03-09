@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import FurnitureImage from './FurnitureImage'
 import Swatch from "./swatch"
 
-const FurnitureApp = ({data, images, swatches, logo}) => {
+const FurnitureApp = ({data, images, swatches, logo, title}) => {
     // Sets the selected color
     const [selectedColors, setColor] = useState({}); // - react state with hooks
     // Formats the data into grouped colors
@@ -93,7 +93,7 @@ const FurnitureApp = ({data, images, swatches, logo}) => {
         // Calls the FurnitureImage component
         <div className="FurnitureApp">
           
-            <FurnitureImage selectedColors={selectedColors} images={images} logo={logo} />
+            <FurnitureImage selectedColors={selectedColors} images={images} logo={logo} title={title}/>
             <div className="swatch-panel">
               <div>
               { 

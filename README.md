@@ -10,22 +10,23 @@ Drop the images (/Library/Windy Valley Woodworks/6410 Color Visualizer Developme
 --pages
 --images
 --components
-
+FYI, the data is managed in a Google Sheet: https://docs.google.com/spreadsheets/d/1Q5cd4qkpYxtwQF2EZsKSWvnLvdFRTlVTFdDd4ujiuRo/edit?usp=sharing
+    The swatch sort order is set
 Also, drop the credentials folder into the root of the project.
 
 Run npm install
 Use the following command to launch a dev site on your server: gatsby develop --https
 
-FYI, the data is managed in a Google Sheet: https://docs.google.com/spreadsheets/d/1Q5cd4qkpYxtwQF2EZsKSWvnLvdFRTlVTFdDd4ujiuRo/edit?usp=sharing
 
-To upload the new files:
-Run "Gatsby build"
 
-NOTE: if you changed images you may need to run "Gatsby clear" to clear all the cached files before running "Gastby Build"
+Push Changes Live:
+1. NOTE: if you changed images you may need to run "Gatsby clean" to clear all the cached files before running "Gastby Build"
 
-Compress everything in /public. Delete the files on the remote server, except README.md and .well-known, and upload and uncompress.
+2. Run "Gatsby build"
 
-Go to C-Panel,
+3. On your Local: Compress everything in /public. 
+
+4. Go to C-Panel
 Public HTML > Visualizer > Web
 Leave the Well-Known folder. Delete everything else
 Upload the Zipped folder and uncompress it.
