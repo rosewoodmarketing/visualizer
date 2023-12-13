@@ -1,13 +1,21 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
+
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import VideoButton from '../components/VideoButton';
+
 
 const IndexPage = ({data}) => (
   <Layout h1="Furniture Visualizer">
     <Seo title="Finch Furniture Visualizer" />
     <div className="content-wrapper">
+      {/* Tutorial Button */}
+      <div className="help-button">
+        <VideoButton videoUrl= "https://vimeo.com/video/840410887?h=57da1f90b3" />
+      </div>
+
       <p>You know you want <a href="https://finch.us.com/" target="_blank" rel="noreferrer">Finch™ outdoor furniture</a>, but in what colors?<br/>Use this visualizer to choose your colors.</p>
       <div className="visualizer-list">
         <Link to="/adirondack-chair/" className="visualizer-list-item">

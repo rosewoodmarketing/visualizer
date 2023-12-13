@@ -92,7 +92,7 @@ const FurnitureApp = ({data, images, swatches, logo, title}) => {
     return (
         // Calls the FurnitureImage component
         <div className="FurnitureApp">
-          
+
             <FurnitureImage selectedColors={selectedColors} images={images} logo={logo} title={title}/>
             <div className="swatch-panel">
               <div>
